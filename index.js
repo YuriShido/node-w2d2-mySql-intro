@@ -22,9 +22,9 @@ app.use('/admin',adminRouters);
 app.use(shopRouters);
 
 //-----testing code sql------
-db.execute('SELECT * FROM products').then((result) =>{
-    console.log(result[0]);
-}).catch(err => console.log(err))
+// db.execute('SELECT * FROM products').then((result) =>{
+//     console.log(result[0]);
+// }).catch(err => console.log(err))
 
 // catch all middleware
 app.use((req,res,next)=>{
